@@ -1,0 +1,104 @@
+{
+  "Version": "0.0.0",
+  "ReleaseNotes": "",
+  "UrlUpdate": "",
+  "Sms": "sms aqui",
+  "EmailFeedback": "seu email aqui",
+  "UrlContato": "seu contato aqui",
+  "UrlTermos": "seu termo aqui",
+  "CheckUser": "true",
+  "Udp": [{"Porta": "7300"}],
+  "Servers": [
+    {
+      "Name": "BR PREMIUM",
+      "TYPE": "premium",
+      "FLAG": "br.png",
+      "ServerIP": "cloudfast.net.br",
+      "CheckUser": "",
+      "ServerPort": "22",
+      "SSLPort": "443",
+      "USER": "",
+      "PASS": ""
+    }
+  ],
+  "Networks": [
+    {
+      "Name": "VIVO SECURITY 01",
+      "FLAG": "vivo",
+      "Payload": "[split][lf] POLL http://1.1.1.1rotate=buzzfeed.com;mobile.adobe.com;1.0.0.5 HTTP/1.1[crlf]Host: http://1.1.1.1rotate=buzzfeed.com;v;mobile.google.com;1.0.0.5[crlf][crlf]",
+      "SNI": "",
+      "TlsIP": "",
+      "ProxyIP": "158.173.2.30",
+      "ProxyPort": "80",
+      "Info": "Proxy"
+    },
+    {
+      "Name": "VIVO SECURITY 02",
+      "FLAG": "vivo",
+      "Payload": "[delay_split][lf]ACL / HTTP/1.1 Websocket [lf]Host: [rotate= portal.vivo.com.br;portalrecarga.vivo.com.br/recarga/home/;meuplano.tim.com.br;www.vivo.com.br;buzzfeed.com;mobile.adobe.com;1.0.0.5;1.1.1.1;buzzfeed.com;myspace.com;mobile.google.com;1.0.0.5;spotify.com;pagamentonline.emis.co.ao;playwaze.com;wazer.com;soundwaze.com;escolas.playwaze.com;www.wazeunlimited.com;bucs.playwaze.com;ftp.chillwaze.com;unpkg.com;c6bank.com.br;helpypro.stoodi.com.br;atendimento.lojadointer.com.br;creatorsupport.deezer.com:80;itsupport.surveymonkey.com;linefriendshelp.zendesk.com;vivo.interflashplusvpnpro.cloud;m2.interflashplusvpnpro.cloud][crlf][crlf]",
+      "TlsIP": "",
+      "ProxyIP": "158.173.2.30",
+      "ProxyPort": "80",
+      "Info": "Proxy"
+    },
+    {
+      "Name": "VIVO SECURITY 03",
+      "FLAG": "vivo",
+      "Payload": "[delay_split][crlf]ACL / HTTP/1.1[crlf]Host:www.whatsapp.com[crlf]Upgrade: Upgrade[crlf]Connection: [crlf][crlf]",
+      "TlsIP": "",
+      "ProxyIP": "158.173.2.30",
+      "ProxyPort": "80",
+      "Info": "Proxy"
+    },
+    {
+      "Name": "VIVO SECURITY 04",
+      "FLAG": "vivo",
+      "Payload": "ACL HTTP/1.1[lf]Host: google.es[lf]",
+      "SNI": "",
+      "TlsIP": "",
+      "ProxyIP": "158.173.2.30",
+      "ProxyPort": "80",
+      "Info": "Proxy"
+      },
+    {
+      "Name": " TIM SALDO VÁLIDO 01",
+      "FLAG": "tim",
+      "Payload": "ACL /cdn-cgi/trace HTTP/1.1[crlf]Host: bancah.com.br[crlf][crlf][split][crlf]GET- / HTTP/1.1[crlf]Host: 158.173.2.30 cloudfast.net.br[crlf]Upgrade: Websocket[crlf][crlf]",
+      "SNI": "",
+      "TlsIP": "",
+      "ProxyIP": "bancah.com.br",
+      "ProxyPort": "80",
+      "Info": "Proxy"
+      },
+    {
+      "Name": "TIM SALDO VÁLIDO 02",
+      "FLAG": "tim",
+      "Payload": "ACL /cdn-cgi/trace HTTP/1.1[crlf]Host: bancah.com.br[crlf][crlf][split][crlf]GET- / HTTP/1.1[crlf]Host: 158.173.2.30 cloudfast.net.br[crlf]Upgrade: Websocket[crlf][crlf]",
+      "SNI": "",
+      "TlsIP": "",
+      "ProxyIP": "104.18.10.131",
+      "ProxyPort": "80",
+      "Info": "Proxy"
+      },
+    {
+      "Name": "TIM SALDO VÁLIDO 03",
+      "FLAG": "tim",
+      "Payload": "ACL /cdn-cgi/trace HTTP/1.1[crlf]Host: bancah.com.br[crlf][crlf][split][crlf]GET- / HTTP/1.1[crlf]Host: 158.173.2.30 cloudfast.net.br[crlf]Upgrade: Websocket[crlf][crlf]",
+      "SNI": "",
+      "TlsIP": "",
+      "ProxyIP": "104.18.11.131",
+      "ProxyPort": "80",
+      "Info": "Proxy"
+      },
+    {
+      "Name": "TIM SALDO VÁLIDO MODO AVIÃO",
+      "FLAG": "tim",
+      "Payload": "GET / HTTP/1.1[crlf]Host: bancah.com.br[crlf][crlf][split]UNLOCK /? HTTP/1.1[crlf]Host: cloudfast.net.br[crlf]Connection: upgrade[crlf]User-Agent: [ua][crlf]Upgrade: websocket[crlf][crlf][split]UNLOCK /? HTTP/1.1[crlf]Host: bancah.com.br[crlf]Content-Length:9999999999999[crlf][crlf]",
+      "SNI": "",
+      "TlsIP": "",
+      "ProxyIP": "bancah.com.br",
+      "ProxyPort": "80",
+      "Info": "Proxy"
+    }
+  ]
+}
